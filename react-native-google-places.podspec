@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'README.md', 'package.json', 'index.js'
   s.source_files   = 'ios/*.{h,m}'
 
-  s.compiler_flags = '-DHAVE_GOOGLE_MAPS=1', '-fno-modules'
+  s.compiler_flags = '-DHAVE_GOOGLE_MAPS=1 -fno-modules'
 
   install_modules_dependencies(s)
   s.dependency 'GooglePlaces', '~> 7.4.0'
